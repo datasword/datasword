@@ -1,0 +1,128 @@
+
+/* Base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1rem;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background: #fff;
+}
+
+/* Layout */
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+    text-align: center;
+}
+
+/* Headings & lead */
+h1 {
+    margin: 0 0 0.25rem 0;
+    font-size: 2.25rem;
+}
+
+h3 {
+    margin: 0 0 1.25rem 0;
+    font-weight: 400;
+    color: #050505;
+    font-size: 1rem;
+}
+
+.lead {
+    margin: 0.5rem 0 1.25rem 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.photo {
+    display: flex;
+    float: right;
+    margin-left: 5%;
+    margin-right: 1%;
+    margin-top: 5%;
+    border: #333;
+    border-width: 20;
+}
+
+.cover {
+  margin-top: 2vh;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15;  /* black, 15px */
+  color: #000;
+  line-height: 1.5;
+  max-width: 700px; 
+  padding-top: 20px; /* Gives space from image */
+  padding: 5px; /* Added padding around the cover letter */
+}
+
+.tab {
+    color: blue;
+    font-size: 16;
+}
+
+.row {
+    gap: 20px; /* Adds gap between columns */
+}
+
+/* Columns & cards */
+.card {
+    background: lightcyan;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Footer line */
+.skills {
+    border-top: 0.5px solid #060500;
+    margin-top: 1.25rem;
+    font-size: 12;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+    .card {
+        margin-bottom: 2rem; /* Spacing between cards on smaller screens */
+    }
+}
+
+.cover {
+  margin-top: 2vh;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;  /* black, 15px */
+  color: #000;
+  line-height: 1.5;
+  max-width: 700px; /* Keeps line length comfortable */
+  padding-top: 20px; /* Gives space from image */
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;  /* Top margin */
+  border: 2px solid #333;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Adjust photo and text alignment for smaller screens */
+@media (max-width: 720px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers the photo and text */
+  }
+
+  .photo {
+    margin: 0;  /* Remove extra margins on smaller screens */
+    border-width: 5px;  /* Optional: smaller border for photo */
+  }  
+}
